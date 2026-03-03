@@ -54,7 +54,7 @@
 
 	"json.schemaDownload.enable": true,
 	"update.mode": "default",
-	"window.zoomLevel": 1,
+	"window.zoomLevel": 2,
 	"workbench.fontAliasing": "none",
 
 	"window.commandCenter": false,
@@ -65,5 +65,6 @@
 	"workbench.iconTheme": "flow-deep",
 	"flow-icons.hidesExplorerArrows": true,
 	"editor.accessibilitySupport": "off",
-	"workbench.editor.showTabs": "single"
+	"workbench.editor.showTabs": "single",
+	"workbench.colorTheme": "Default Dark+"
 }

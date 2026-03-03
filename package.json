@@ -9,7 +9,7 @@
 	"scripts": {
 		"format": "prettier --write \"src/**/*.ts\"",
 		"test": "ts-node src/main.ts < src/test.txt",
-		"node": "npx esbuild src/main.ts --bundle --platform=node --target=node18 --outfile=src/main.js --minify && cat src/main.js | pbcopy && rm src/main.js",
+		"node": "npx esbuild src/main.ts --bundle --platform=node --target=node18 --outfile=src/main.js && cat src/main.js | pbcopy",
 		"benchmark": "chmod +x src/scripts/benchmark.sh && ./src/scripts/benchmark.sh"
 	},
 	"devDependencies": {

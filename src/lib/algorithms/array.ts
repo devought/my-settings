@@ -67,3 +67,21 @@ export const subsets = function <T>(arr: T[]) {
 export const filterDuplicates = function <T>(arr: T[]) {
 	return Array.from(new Set(arr))
 }
+
+export const bubbleSort = function (arr: number[]) {
+	if (arr.length === 0) return []
+	const n = arr.length
+	for (let i = 0; i < n; i++) {
+		for (let j = i + 1; j < n; j++) {
+			if (arr[i] > arr[j]) swap(arr, i, j)
+		}
+	}
+	return arr
+}
+
+export const quickSort = function (arr: number[]) {}
+export const mergeSort = function (arr: number[]) {}
+export const heapSort = function (arr: number[]) {}
+export const radixSort = function (arr: number[]) {}
+export const selectionSort = function (arr: number[]) {}
+export const insertionSort = function (arr: number[]) {}
