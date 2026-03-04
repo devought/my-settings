@@ -54,7 +54,7 @@
 
 	"json.schemaDownload.enable": true,
 	"update.mode": "default",
-	"window.zoomLevel": 2,
+	"window.zoomLevel": 1,
 	"workbench.fontAliasing": "none",
 
 	"window.commandCenter": false,

@@ -8,7 +8,7 @@ My VSCode Extensions:
 - Auto Rename Tag
 - DotENV
 - Error Lens
-- ES7+ Snippets
+- JavaScript (ES6) code snippets
 - ESLint
 - Flow Icons
 - Github Pull Requests

@@ -1,6 +1,6 @@
 {
 	"Codeforces": {
-		"prefix": "cf",
+		"prefix": "lf",
 		"body": [
 			"import * as fs from \"fs\";",
 			"",
