@@ -40,6 +40,12 @@
 	"[snippets]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
+	"[yaml]": {
+		"editor.tabSize": 4,
+		"editor.guides.indentation": false,
+		"editor.guides.bracketPairs": false,
+		"editor.guides.bracketPairsHorizontal": false
+	},
 
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"typescript.updateImportsOnFileMove.enabled": "always",

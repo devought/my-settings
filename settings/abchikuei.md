@@ -16,6 +16,7 @@ Laptop Applications:
 - Raycast
 - NordVPN
 - Slack
+- Ghostty
 
 Phone Applications:
 
@@ -63,9 +64,15 @@ Projects:
 
 - Neetcode Marathon
 - Codeforces Marathon
+- Hackerrank SQL Marathon
 - Telegram Bot
 - UI Library
 - AI Trader
 - Electron App
 - React Native App
 - Fullstack Web App
+- My Knowledge Library
+
+mail: `abchikuei@domain.com`
+username: `abchikuei`
+nickname: `Kurban Eldos`

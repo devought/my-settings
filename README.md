@@ -5,26 +5,14 @@ My VSCode Extensions:
 - Code Runner
 - Container Tools
 - Dev Containers
-- Auto Rename Tag
-- DotENV
-- Error Lens
-- JavaScript (ES6) code snippets
+- Dotenv
 - ESLint
 - Flow Icons
-- Github Pull Requests
 - GitLens
-- GraphQL
-- Terraform
 - HTML CSS Support
-- ES6 Snippets
-- Live Server
-- Live Share
 - Path Intellisense
 - Prettier
 - Rainbow CSV
 - Tailwind CSS
 - Template String Converter
-- SVG Preview
-- SCSS Intellisense
-- Nginx Configuration
-- Remote SSH
+- Database Client
