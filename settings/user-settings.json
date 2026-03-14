@@ -9,7 +9,6 @@
 	"editor.fontSize": 12,
 	"editor.wordWrap": "on",
 	"editor.formatOnSave": true,
-	"markdown.preview.fontFamily": "Lab Mono",
 
 	"files.associations": { "*.css": "tailwindcss" },
 	"files.watcherExclude": {
@@ -35,6 +34,9 @@
 
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.fontSize": 12,
+
+	"markdown.preview.fontFamily": "Lab Mono, JetBrains Mono",
+	"markdown.preview.fontSize": 13,
 
 	"[prisma]": { "editor.defaultFormatter": "Prisma.prisma" },
 	"[snippets]": {

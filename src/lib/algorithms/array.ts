@@ -42,10 +42,6 @@ export const hasDuplicates = function <T>(arr: T[]) {
 	return false
 }
 
-export const swap = function <T>(arr: T[], i: number, j: number) {
-	;[arr[i], arr[j]] = [arr[j], arr[i]]
-}
-
 export const subsets = function <T>(arr: T[]) {
 	const res: T[][] = []
 	const stack: { i: number; slate: T[] }[] = [{ i: 0, slate: [] }]
@@ -73,7 +69,9 @@ export const bubbleSort = function (arr: number[]) {
 	const n = arr.length
 	for (let i = 0; i < n; i++) {
 		for (let j = i + 1; j < n; j++) {
-			if (arr[i] > arr[j]) swap(arr, i, j)
+			if (arr[i] > arr[j]) {
+				;[arr[i], arr[j]] = [arr[j], arr[i]]
+			}
 		}
 	}
 	return arr

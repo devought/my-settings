@@ -48,7 +48,6 @@ export {
 	isSorted,
 	search,
 	hasDuplicates,
-	swap,
 	subsets,
 	bubbleSort,
 	quickSort
