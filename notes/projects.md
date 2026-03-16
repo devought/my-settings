@@ -4,8 +4,10 @@
 
 - [ ] Telegram group chat game bot `Don't say the same thing as me`
 - [ ] Telegram YES/NO questions game bot (1v1 with opponent)
-- [ ] AI powered React Native app to train and refresh knowledge
-- [ ] LLM Aggregator desktop app (ChatGPT, Claude, Gemini, DeepSeek)
+- [ ] React Native app to train and refresh knowledge
+- [ ] Online crypto trading system powered with AI
+- [ ] Blazingly fast full stack web site
+- [ ] Ugly UX components
 - [ ] Portfolio 3D
 
 ### Under The Hood (JS/Web Engineering)

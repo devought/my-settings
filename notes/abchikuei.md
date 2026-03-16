@@ -1,7 +1,45 @@
-### Programming Languages:
+### Programming Techs:
 
 - TypeScript
 - JavaScript
+- HTML
+- CSS
+- Git
+- Github
+- Docker
+- Kubernetes
+- NodeJS
+- Chrome Devtools
+- Bun
+- React
+- NextJS
+- Tailwind CSS
+- CSS Modules
+- Zustand
+- Tanstack Query
+- React Query
+- Redux
+- NestJS
+- Elysia
+- Fastify
+- PostgreSQL
+- Redis
+- MongoDB
+- Prisma
+- Vitest
+- Playwright
+- Vite
+- ESBuild
+- Webpack
+- Babel
+- Turbopack
+- SWC
+- GraphQL
+- WebSocket
+- Github Actions
+- Linux
+- Nginx
+- Amazon Web Services
 
 ### Languages:
 
@@ -28,7 +66,6 @@
 
 - Telegram
 - Chrome
-- Claude
 - Phantom
 - Slack
 - Yandex Go
@@ -42,12 +79,11 @@
 - Onay
 - LinkedIn
 - Whispr Flow
-- Authy
+- Google 2FA
 - IZI
 
 ### Subscriptions:
 
-- Claude
 - Youtube
 - Telegram
 - Raycast
@@ -168,27 +204,14 @@
 - Rhetoric and Logic ← как аргументировать и писать
 - Biology (basics) ← понять как устроена жизнь
 
-### Youtube Channels:
-
-- Dreamwave
-- ikigai
-- Sambucha
-- Kuplinov Play
-- Rozetked
-- Victorovich
-- Neetcode
-- Errichto Algorithms
-- 3Blue1Brown
-- The Organic Chemistry Tutor
-- Outdoor Boys
-- TrevTutor
-- BradyYourTutor
-- Veritasium
-- Techdose
-
 ### CP Platforms:
 
 - Leetcode
 - Codeforces
 - Hackerrank
-- Atcoder
+
+### Fonts:
+
+- Lab Mono
+- JetBrains Mono
+- Maple Mono

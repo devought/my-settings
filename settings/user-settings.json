@@ -3,6 +3,7 @@
 	"editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.fontFamily": "Lab Mono, JetBrains Mono Light",
+	"editor.lineHeight": 1.4,
 	"editor.largeFileOptimizations": true,
 	"editor.tabCompletion": "on",
 	"editor.cursorStyle": "line-thin",

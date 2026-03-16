@@ -617,6 +617,8 @@ const checkInclusion = function (s: string, t: string) {
 }
 ```
 
+- There is slightly optimized version
+
 ```typescript
 const checkInclusion = function (s: string, t: string) {
 	if (s.length > t.length) return false
@@ -738,25 +740,59 @@ const permute = function (ints: number[]) {
 ----------------------------------------- Divider -----------------------------------------
 
 - [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/)
-    - Given an integer `int`, return its corresponding column title as it appears in an Excel sheet.
+    - Given an integer `columnNumber`, return its corresponding column title as it appears in an Excel sheet.
 
 - Constraints:
     - `1 <= columnNumber <= 2^31 - 1`
 
 - Examples:
-    - Input: columnNumber = 1
-    - Output: "A"
-
-    - Input: columnNumber = 28
-    - Output: "AB"
+    - Input: `columnNumber = 1` → Output: `"A"`
+    - Input: `columnNumber = 28` → Output: `"AB"`
+    - Input: `columnNumber = 701` → Output: `"ZY"`
 
 - Algorithm:
-    - While int > 0:
-        - Decrement int by 1 to shift from 1-indexed (A=1) to 0-indexed (A=0)
-        - Get the current letter: remainder = int % 26, then map to char ('A' + remainder)
-        - Prepend char to title (we extract least significant letter first)
-        - Drop the last letter: int = floor(int / 26)
-    - Return title
+    - This is base-26 conversion, but unlike base-10 there is no zero digit (A=1, Z=26)
+    - That means we can't use `% 26` directly — `26 % 26 = 0` which has no letter mapping
+    - Fix: decrement int before each modulo to shift from 1-indexed to 0-indexed (A=0, Z=25)
+    - Why decrement on every iteration and not just once at the start?
+        - Because `floor(int / 26)` produces a new 1-indexed number each time
+        - That new number needs to be shifted again before the next `% 26`
+
+    - Steps:
+        - `int--` shift to 0-indexed before modulo
+        - `remainder = int % 26` extract last "digit" (0–25)
+        - `char = 'A' + remainder` map to letter (0→'A', 25→'Z')
+        - `prepend char to title` we extract least significant letter first
+        - `int = floor(int / 26)` drop the last digit, move to next
+        - repeat while `int > 0`
+
+    - Analogy with base-10:
+
+```
+        123 % 10 = 3  →  prepend '3'  →  int = 12
+        12  % 10 = 2  →  prepend '2'  →  int = 1
+        1   % 10 = 1  →  prepend '1'  →  int = 0
+        result → "123"
+```
+
+        Same idea here — just replace `% 10` with `% 26`, digits with letters, and add `int--` each step
+
+    - Example with int=28:
+
+```
+        int=28 → int-- → 27 → 27%26=1 → 'B' → title="B"  → int=floor(27/26)=1
+        int=1  → int-- → 0  → 0%26=0  → 'A' → title="AB" → int=floor(0/26)=0
+        result → "AB" ✓
+```
+
+    - base-10 vs base-26:
+
+```
+        % 10  → digit 0–9       % 26  → letter 0–25
+        no shift needed         int-- → shift to 0-indexed each iteration
+        '0' + remainder         65 + remainder → uppercase letter
+        floor(n / 10)           floor(n / 26)
+```
 
 ```typescript
 export const convertToTitle = function (int: number) {
@@ -772,89 +808,44 @@ export const convertToTitle = function (int: number) {
 }
 ```
 
-### Алгоритм
-
-#### Шаги
-
-1. Вытащи последнюю букву:
-    - `int--` — сдвиг чтобы `% 26` работал корректно
-    - `remainder = int % 26` — получаем индекс буквы (0–25)
-    - `char = 'A' + remainder` — маппинг: 0→'A', 25→'Z'
-
-2. Добавь букву в **начало** строки
-
-3. Отрежь последний разряд:
-    - `int = floor(int / 26)`
-
-4. Повторяй пока `int > 0`
-
-#### Аналогия с base-10
-
-Если бы ты переводил `123` в строку по цифрам:
-
-```
-123 % 10 = 3  →  '3' спереди  →  int = 12
-12  % 10 = 2  →  '2' спереди  →  int = 1
-1   % 10 = 1  →  '1' спереди  →  int = 0
-готово → "123"
-```
-
-Здесь то же самое — `% 10` заменили на `% 26`, цифры заменили на буквы,
-и добавили `int--` перед каждым шагом чтобы обойти отсутствие нуля.
-
-#### Почему int-- на каждой итерации, а не один раз?
-
-После `floor(int / 26)` рождается новое число — и оно снова 1-indexed.
-Его снова нужно сдвигать.
-
-```
-итерация 1:
-  int = 28  ← пришло снаружи, 1-indexed
-  int--  →  27
-  27 % 26 = 1  →  'B'
-  int = floor(27 / 26) = 1  ← новое число, тоже 1-indexed!
-
-итерация 2:
-  int = 1  ← это не 0, это буква 'A' (1-indexed)
-  int--  →  0
-  0 % 26 = 0  →  'A'  ✓
-```
-
-#### base-10 vs base-26
-
-|                  | base-10            | base-26                            |
-| ---------------- | ------------------ | ---------------------------------- |
-| остаток          | `% 10` → цифра 0–9 | `% 26` → буква 0–25                |
-| сдвиг            | не нужен           | `int--` → приводим к 0-indexed     |
-| маппинг          | `'0' + remainder`  | `65 + remainder` → заглавная буква |
-| следующий разряд | `floor(n / 10)`    | `floor(n / 26)`                    |
-
 ----------------------------------------- Divider -----------------------------------------
 
 - [Majority Element](https://leetcode.com/problems/majority-element/description/)
-    - Дан массив целых чисел. В нём гарантированно есть элемент который встречается более `n/2` раз. Найти его.
+    - Given an array of integers, find the majority element — the one that appears more than `n/2` times. It is guaranteed to exist.
 
 - Constraints:
     - `n == nums.length`
     - `1 <= n <= 5 * 10^4`
     - `-10^9 <= nums[i] <= 10^9`
-    - It's guaranteed Majority element exists
+    - Majority element always exists (guaranteed)
+
+- Examples:
+    - Input: `[2, 2, 1, 1, 2]` → Output: `2`
+    - Input: `[3, 2, 3]` → Output: `3`
 
 - Algorithm (Boyer-Moore Voting):
-    - Идея — majority element встречается больше n/2 раз, значит он "переживёт" все остальные элементы
-    - Держим кандидата и счётчик. Если текущий элемент совпадает с кандидатом — плюсуем, иначе минусуем
-    - Когда счётчик доходит до 0 — кандидат "уничтожен" другими элементами, берём следующий элемент как нового кандидата
-    - В конце остаётся только majority element — его невозможно уничтожить так как он в большинстве
+    - Core idea: majority element appears more than n/2 times, so it will always "outlive" all other elements
+    - Track a candidate and a counter. If current element matches candidate — increment, otherwise decrement
+    - When counter hits 0 — candidate was "cancelled out" by other elements, pick next element as new candidate
+    - Majority element can never be fully cancelled out because it outnumbers all others combined
 
-- Пример с `[2, 2, 1, 1, 2]`:
+    - Steps:
+        - Start with `candidate = ints[0]`, `count = 1`
+        - For each element:
+            - if `int == candidate` → `count++`
+            - else → `count--`
+            - if `count == 0` → `candidate = int`, `count = 1`
+        - Return candidate
+
+    - Example with `[2, 2, 1, 1, 2]`:
 
 ```
-    i=0: candidate=2, count=1
-    i=1: int=2 == candidate  →  count=2
-    i=2: int=1 != candidate  →  count=1
-    i=3: int=1 != candidate  →  count=0  →  candidate=1, count=1
-    i=4: int=2 != candidate  →  count=0  →  candidate=2, count=1
-    ответ → 2 ✓
+        i=0: candidate=2, count=1
+        i=1: int=2 == candidate  →  count=2
+        i=2: int=1 != candidate  →  count=1
+        i=3: int=1 != candidate  →  count=0  →  candidate=1, count=1
+        i=4: int=2 != candidate  →  count=0  →  candidate=2, count=1
+        result → 2 ✓
 ```
 
 ```typescript
@@ -871,12 +862,12 @@ const majorityElement = function (ints: number[]) {
 		else count--
 
 		if (count == 0) {
-			candidate = int
+			candidate = int // candidate cancelled out, pick new one
 			count = 1
 		}
 	}
 
-	return candidate
+	return candidate // majority element always survives
 }
 ```
 
@@ -1038,5 +1029,116 @@ export class MyHashMap {
 			head = head.next
 		}
 	}
+}
+```
+
+----------------------------------------- Divider -----------------------------------------
+
+- [Sort an Array](https://leetcode.com/problems/sort-an-array/description/)
+    - Given an array of integers, sort it in ascending order using QuickSort
+
+- Constraints:
+    - `1 <= nums.length <= 5 * 10^4`
+    - `-5 * 10^4 <= nums[i] <= 5 * 10^4`
+
+- Examples:
+    - Input: `[5, 2, 3, 1]` → Output: `[1, 2, 3, 5]`
+    - Input: `[5, 1, 1, 2, 0]` → Output: `[0, 1, 1, 2, 5]`
+
+- Algorithm (QuickSort — in-place):
+    - Core idea: pick a pivot, put it in its final position, recursively sort left and right parts
+    - In-place means we never create new arrays — only swap elements inside the original array
+    - This is critical for large inputs — creating new arrays on every call causes heap out of memory
+
+    - Why recursive version with new arrays fails:
+
+```
+        each call creates: less[], equal[], great[]
+        on 50_000 elements this causes millions of allocations
+        V8 runs out of heap memory
+```
+
+    - Partition (core of QuickSort):
+        - Goal: place pivot at its final position so that:
+            - everything left of pivot  < pivot
+            - everything right of pivot > pivot
+        - Use `i` as a boundary pointer — everything at or left of `i` is less than pivot
+        - `j` scans left to right, when `ints[j] <= pivot` → expand boundary (i++) and swap
+
+        - Example with `[3, 1, 4, 2]`, pivot = last element = 2:
+
+```
+            i = -1
+
+            j=0: ints[j]=3, 3 <= 2? no  → nothing
+            j=1: ints[j]=1, 1 <= 2? yes → i++ → i=0, swap(0,1) → [1, 3, 4, 2]
+            j=2: ints[j]=4, 4 <= 2? no  → nothing
+
+            end of loop → swap(i+1, right) → swap(1, 3) → [1, 2, 4, 3]
+            pivot=2 is now at index 1 — its final position ✓
+```
+
+    - Steps:
+        - `quickSort(left, right)`:
+            - base case: if `left >= right` return  ← single element or empty
+            - `pivotIndex = partition(left, right)` ← pivot is now at final position
+            - `quickSort(left, pivotIndex - 1)`     ← sort left part
+            - `quickSort(pivotIndex + 1, right)`    ← sort right part
+
+    - Complexity:
+
+```
+        Time:  O(n log n) average,  O(n²) worst case (sorted input)
+        Space: O(log n) — only recursive call stack, no new arrays
+```
+
+```typescript
+export const sortArray = function (ints: number[]) {
+	if (ints.length <= 1) return ints
+
+	const swap = (i: number, j: number) => {
+		;[ints[i], ints[j]] = [ints[j], ints[i]]
+	}
+
+	const stack: number[] = []
+	stack.push(0)
+	stack.push(ints.length - 1)
+
+	while (stack.length > 0) {
+		const right = stack.pop()!
+		const left = stack.pop()!
+
+		if (left >= right) continue
+
+		const randomIndex =
+			left + Math.floor(Math.random() * (right - left + 1))
+		swap(randomIndex, right)
+		const pivot = ints[right]
+
+		let less = left
+		let great = right
+		let i = left
+
+		while (i <= great) {
+			if (ints[i] < pivot) {
+				swap(less, i)
+				less++
+				i++
+			} else if (ints[i] > pivot) {
+				swap(great, i)
+				great--
+			} else {
+				i++
+			}
+		}
+
+		stack.push(left)
+		stack.push(less - 1)
+
+		stack.push(great + 1)
+		stack.push(right)
+	}
+
+	return ints
 }
 ```

@@ -76,17 +76,3 @@ export const bubbleSort = function (arr: number[]) {
 	}
 	return arr
 }
-
-export const quickSort = function (arr: number[]): number[] {
-	if (arr.length < 2) return arr
-	const greater = []
-	const less = []
-	const pivot = arr.length >> 1
-
-	for (let i = 0; i < arr.length; i++) {
-		if (i === pivot) continue
-		else if (arr[i] > arr[pivot]) greater.push(arr[i])
-		else less.push(arr[i])
-	}
-	return [...quickSort(less), arr[pivot], ...quickSort(greater)]
-}

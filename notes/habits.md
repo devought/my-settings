@@ -8,6 +8,7 @@
 - After solving, always check other solutions and note:
 - If stuck for more than 15-20 min, look at hints not the solution
 - Document every solution with your format (problem, constraints, algorithm)
+- Try to keep code clean and easy for debugging
 
 ### Codestyle:
 
@@ -24,3 +25,4 @@
 
 - Always use Google, Apple or Github Auth when it comes to authorization
 - Use one password everywhere but turn on 2FA wherever its possible
+- Do not share sensitive data with anyone, it applies to AI too

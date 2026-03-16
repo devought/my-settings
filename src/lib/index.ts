@@ -49,8 +49,7 @@ export {
 	search,
 	hasDuplicates,
 	subsets,
-	bubbleSort,
-	quickSort
+	bubbleSort
 } from './algorithms/array'
 
 export { Vector } from './data-structures/vector'
