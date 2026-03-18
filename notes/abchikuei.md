@@ -151,11 +151,7 @@
 ### Resources:
 
 - [CP Handbook](https://cses.fi/book/book.pdf)
-- [LearnJS](https://learn.javascript.ru/)
 - [CP Algorithms](https://cp-algorithms.com/index.html)
-- [Web Development](https://my-js.org/docs/guide/intro-guide)
-- [Frontend Handbook](https://www.frontendinterviewhandbook.com/ru/introduction)
-- [NodeJS](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
 
 ### Competitive Coding:
 
