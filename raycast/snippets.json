@@ -1,0 +1,19 @@
+[
+	{ "name": "Email", "text": "abchikuei@gmail.com", "keyword": "\\email" },
+	{ "name": "Phone", "text": "87066735790", "keyword": "\\phone" },
+	{ "name": "Pin", "text": "040428500880", "keyword": "\\pin" },
+	{ "name": "Name", "text": "Kurban Eldos", "keyword": "\\name" },
+	{ "name": "Stone", "text": "🗿🗿🗿", "keyword": "\\stone" },
+	{ "name": "Shrug", "text": "¯\\_(ツ)_/¯", "keyword": "\\shrug" },
+	{ "name": "Like", "text": "👍👍", "keyword": "\\like" },
+	{ "name": "Dislike", "text": "👎👎", "keyword": "\\dislike" },
+	{ "name": "Time", "text": "{time}", "keyword": "\\time" },
+	{ "name": "Date", "text": "{date}", "keyword": "\\date" },
+	{ "name": "Weekday", "text": "{day}", "keyword": "\\day" },
+	{ "name": "Sparkle", "text": "✦", "keyword": "\\sparkle" },
+	{
+		"name": "Divider",
+		"text": "•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••",
+		"keyword": "div"
+	}
+]

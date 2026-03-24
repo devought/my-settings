@@ -1,70 +1,163 @@
 ### Programming Techs:
 
+#### Languages:
+
 - TypeScript
 - JavaScript
 - HTML
 - CSS
 - SCSS
 - PostCSS
-- Git
-- Github
-- Docker
-- Kubernetes
+- GraphQL
+
+#### Runtimes & Package Managers:
+
 - NodeJS
-- PM2
+- Bun
 - npm
 - yarn
 - pnpm
-- Chrome
-- Bun
+- PM2
+
+#### Frameworks & Meta-frameworks:
+
 - React
 - Vue
 - SolidJS
+- Svelte
 - NextJS
-- Tailwind CSS
-- CSS Modules
-- Zustand
-- Tanstack Query
-- React Query
-- Redux
-- Mobx
+- Ember.js
+- Yup
+- React Hook Form
+- Meteor
+- React Email
+
+#### Backend Frameworks:
+
 - NestJS
 - Elysia
 - Fastify
 - Express
-- RxJS
-- Lodash
-- Meteor
 - Hono
+- Resend
+- Winston
+- Zod
+- Axios
+- Nodemailer
+- Stripe
+- AWS S3
+- Multer
+- Elastic Search
+- Grafana
+- Prometheus
+- BullMQ
+
+#### Styling:
+
+- Tailwind CSS
+- CSS Modules
+- Bootstrap
+
+#### UI Component Libraries:
+
+- Material UI
+- Chakra UI
+- Shadcn UI
+- Ant Design
+- Radix UI
+
+#### State Management:
+
+- Zustand
+- Redux
+- Mobx
+- ImmerJS
+
+#### Data Fetching:
+
+- Tanstack Query
+- React Query
+- RxJS
+
+#### Databases:
+
 - PostgreSQL
 - Redis
 - Neo4j
 - ClickHouse
 - MongoDB
+
+#### ORMs & BaaS:
+
 - Prisma
-- Vitest
-- Playwright
-- Cypress
+- Supabase
+- Convex
+- Firebase
+
+#### Build Tools & Bundlers:
+
 - Vite
 - ESBuild
 - Webpack
-- Gulp
-- Babel
-- JQuery
 - Turbopack
 - SWC
-- GraphQL
-- Socket.Io
+- Gulp
+- Babel
+
+#### Testing:
+
+- Jest
+- Mocha
+- Vitest
+- Playwright
+- Cypress
+
+#### DevOps & Infrastructure:
+
+- Git
+- Github
 - Github Actions
+- Docker
+- Kubernetes
 - Linux
 - Nginx
 - Apache
-- Convex
-- Clerk
-- Supabase
-- Workbox
-- Flow
 - Amazon Web Services
+
+#### Auth:
+
+- Clerk
+- NextAuth
+- Lucia
+- PassportJS
+
+#### Real-time & Networking:
+
+- Socket.IO
+
+#### Visualization & Graphics:
+
+- D3.js
+- ThreeJS
+- AnimeJS
+- ChartJS
+- Framer Motion
+- p5.js
+- Pixi.js
+- Plotly.js
+- Recharts
+
+#### Utilities:
+
+- Lodash
+- Flow
+- Workbox
+- n8n
+- OpenClaw
+
+#### Browser:
+
+- Chrome
 
 ### Languages:
 
@@ -154,11 +247,7 @@
 - Painting
 - Piano
 - Chess
-- Coin Collection
-- Banknote Collection
-- Book Collection
-- Crypto Collection
-- Stock Collection
+- Leetcode
 
 ### Resources:
 

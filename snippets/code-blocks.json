@@ -11,6 +11,12 @@
 		"body": "console.log('$1:', $1);",
 		"description": "Debug log with variable label"
 	},
+	"Console Log The Object": {
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"prefix": "clj",
+		"body": "console.log(JSON.stringify($1, null, 2));",
+		"description": "Console log the JSON with formatting"
+	},
 	"Destructure rename": {
 		"scope": "typescript,javascript,typescriptreact,javascriptreact",
 		"prefix": "dr",
@@ -28,14 +34,6 @@
 		"prefix": "freq",
 		"body": ["$1.set($2, ($1.get($2) ?? 0) + 1)"],
 		"description": "Increment a frequency map entry. Tab 1 = map name, Tab 2 = array name."
-	},
-	"Divider": {
-		"scope": "typescript,javascript,typescriptreact,javascriptreact, markdown",
-		"prefix": "div",
-		"body": [
-			"----------------------------------------- Divider -----------------------------------------"
-		],
-		"description": "Simple divider for better readability"
 	},
 	"Swapper": {
 		"scope": "typescript,javascript,typescriptreact,javascriptreact",

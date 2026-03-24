@@ -42,6 +42,9 @@ Development Tools:
 - docker
 - kubectl
 - minikube
+- helm
+- protobuf
+- terraform
 - aws
 - gh
 - railway
@@ -56,6 +59,11 @@ CLI:
 - bat
 - fzf
 - tmux
+- zoxide
+- ripgrep
+- clipboard
+- eza
+- lazygit
 
 Protocols and Linux Tools:
 
@@ -69,6 +77,12 @@ Protocols and Linux Tools:
 - apache
 - sudo
 - apt
+- pacman
+- flatpak
+- systemctl
+- htop
+- du
+- df
 - wget
 - ping
 - telnet
@@ -85,3 +99,8 @@ Protocols and Linux Tools:
 - tcpdump
 - ngrok
 - scp
+
+Other Tools:
+
+- pg_dump
+- pg_restore
