@@ -146,7 +146,7 @@
 2. `Control + Tab` - Cycle through open tabs
 3. `Control + W` - Close current tab
 4. `Control + K + W` - Close all tabs
-5. `Cmd + 1/2/3` - Focus nth editor group
+5. `Cmd + <n>` - Go to nth tab
 
 #### Navigation:
 
