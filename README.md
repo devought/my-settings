@@ -1,33 +1,3 @@
-My VSCode Extensions:
-
-- Docker
-- Prisma
-- Code Runner
-- Container Tools
-- Dev Containers
-- Dotenv
-- ESLint
-- Flow Icons
-- GitLens
-- HTML CSS Support
-- Path Intellisense
-- Prettier
-- Rainbow CSV
-- Tailwind CSS
-- Template String Converter
-- Database Client
-- Code Runner
-
-Additional:
-
-- Kubernetes
-- Remote SSH
-- Terraform
-- GraphQL
-- React Native Tools
-- Live Server
-- Live Share
-
 Development Tools:
 
 - brew
@@ -36,6 +6,7 @@ Development Tools:
 - yarn
 - pnpm
 - bun
+- deno
 - tsc
 - tsx
 - git
@@ -45,6 +16,8 @@ Development Tools:
 - helm
 - protobuf
 - terraform
+- ffmpeg
+- yt-dlp
 - aws
 - gh
 - railway
@@ -58,12 +31,15 @@ CLI:
 - yazi
 - bat
 - fzf
-- tmux
 - zoxide
 - ripgrep
 - clipboard
 - eza
 - lazygit
+- lazydocker
+- jq
+- httpie
+- mole
 
 Protocols and Linux Tools:
 
@@ -72,8 +48,12 @@ Protocols and Linux Tools:
 - bitnami
 - curl
 - nmap
+- dig
 - chmod
 - chown
+- openssl
+- host
+- route
 - apache
 - sudo
 - apt
@@ -87,6 +67,7 @@ Protocols and Linux Tools:
 - ping
 - telnet
 - traceroute
+- tracepath
 - netstat
 - nslookup
 - ifconfig
@@ -97,10 +78,6 @@ Protocols and Linux Tools:
 - rsync
 - lsof
 - tcpdump
+- hashcat
 - ngrok
 - scp
-
-Other Tools:
-
-- pg_dump
-- pg_restore

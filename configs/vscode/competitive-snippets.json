@@ -1,5 +1,6 @@
 {
 	"Codeforces": {
+		"scope": "typescript,javascript",
 		"prefix": "lf",
 		"body": [
 			"import * as fs from \"fs\";",
@@ -35,9 +36,11 @@
 			"}",
 			"",
 			"main();"
-		]
+		],
+		"description": "Template for solving problem from Codeforces"
 	},
 	"Neetcode": {
+		"scope": "typescript,javascript",
 		"prefix": "nc",
 		"body": [
 			"export class Solution {",
@@ -45,10 +48,13 @@
 			"        $0",
 			"    }",
 			"}"
-		]
+		],
+		"description": "Template for solving problem from Neetcode"
 	},
 	"Leetcode": {
+		"scope": "typescript,javascript",
 		"prefix": "lc",
-		"body": ["export const $1 = function ($2) {", "   $0", "}"]
+		"body": ["export const $1 = function ($2) {", "   $0", "}"],
+		"description": "Template for solving problem from Leetcode"
 	}
 }

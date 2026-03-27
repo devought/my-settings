@@ -22,15 +22,14 @@
 
 1. `Cmd + 1/2/3/4` - switch view
 2. `Cmd + Shift + C` - open Computer window
-3. `Cmd + Option + Space` - open Finder search
-4. `Cmd + R` - open original location of selected alias
-5. `Cmd + E` - eject selected .dmg or removable media
-6. `Cmd + Shift + .` - show hidden files
-7. `Cmd + Option + V` - move copied file
-8. `Cmd + Option + I` - Get Info for multiple selected items
-9. `Enter` - rename selected file
-10. `Space` - quick view selected file
-11. `Option + Right/Left` - expand/collapse all subfolders in list view
+3. `Cmd + R` - open original location of selected alias
+4. `Cmd + E` - eject selected .dmg or removable media
+5. `Cmd + Shift + .` - show hidden files
+6. `Cmd + Option + V` - move copied file
+7. `Cmd + Option + I` - Get Info for multiple selected items
+8. `Enter` - rename selected file
+9. `Space` - quick view selected file
+10. `Option + Right/Left` - expand/collapse all subfolders in list view
 
 #### System:
 
@@ -40,7 +39,6 @@
 4. `Fn + E` - insert emoji
 5. `Cmd + Option + Esc` - open Task Manager
 6. `Cmd + ,` - open app settings
-7. `Cmd + Control + D` - dictionary / Force Touch alternative
 
 #### Safari:
 
@@ -98,7 +96,6 @@
 6. `Cmd + 0` - reset zoom
 7. `Cmd + Shift + C` - open inspector on element
 8. `Cmd + Option + I` - open DevTools
-9. `Cmd + U` - view page source
 
 #### Bookmarks:
 
@@ -293,3 +290,10 @@
 3. `Cmd + Q` - quit Telegram
 4. `Cmd + ,` - open settings
 5. `Cmd + J` - show contacts
+
+### Ghossty:
+
+1. `Cmd + D` - split the terminal
+2. `Cmd + K` - clear the output
+3. `Cmd + <n>` - go to nth tab
+4. `Cmd + Enter` - toggle fullscreen

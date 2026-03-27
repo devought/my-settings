@@ -5,8 +5,9 @@
 	"editor.fontFamily": "Lab Mono, Maple Mono",
 	"editor.lineHeight": 1.4,
 	"editor.largeFileOptimizations": true,
-	"editor.tabCompletion": "on",
-	"editor.cursorStyle": "line-thin",
+	"editor.tabCompletion": "onlySnippets",
+	"editor.acceptSuggestionOnEnter": "on",
+	"editor.cursorStyle": "line",
 	"editor.fontSize": 12,
 	"editor.wordWrap": "on",
 	"editor.formatOnSave": true,
@@ -36,8 +37,8 @@
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.fontSize": 12,
 
-	"markdown.preview.fontFamily": "Lab Mono, Maple Mono",
-	"markdown.preview.fontSize": 13,
+	"markdown.preview.fontFamily": "Lab Mono",
+	"markdown.preview.fontSize": 14,
 
 	"[prisma]": { "editor.defaultFormatter": "Prisma.prisma" },
 	"[snippets]": {

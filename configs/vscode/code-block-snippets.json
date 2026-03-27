@@ -5,7 +5,7 @@
 		"body": "console.log($0);",
 		"description": "Fast console.log"
 	},
-	"Debug log (labeled)": {
+	"Debug log": {
 		"scope": "typescript,javascript,typescriptreact,javascriptreact",
 		"prefix": "cd",
 		"body": "console.log('$1:', $1);",
@@ -17,38 +17,17 @@
 		"body": "console.log(JSON.stringify($1, null, 2));",
 		"description": "Console log the JSON with formatting"
 	},
-	"Destructure rename": {
-		"scope": "typescript,javascript,typescriptreact,javascriptreact",
-		"prefix": "dr",
-		"body": "const { $2 } = $1;",
-		"description": "Object destructuring with rename"
-	},
-	"Traditional for loop": {
-		"scope": "typescript,javascript,typescriptreact,javascriptreact",
-		"prefix": "defor",
-		"body": ["for (let i = 0; i < $1; i++) {", "  $2", "}"],
-		"description": "Traditional indexed for loop"
-	},
 	"Frequency Map Increment": {
 		"scope": "typescript,javascript,typescriptreact,javascriptreact",
 		"prefix": "freq",
 		"body": ["$1.set($2, ($1.get($2) ?? 0) + 1)"],
-		"description": "Increment a frequency map entry. Tab 1 = map name, Tab 2 = array name."
+		"description": "Increment a frequency map entry"
 	},
 	"Swapper": {
 		"scope": "typescript,javascript,typescriptreact,javascriptreact",
 		"prefix": "swap",
-		"body": ";[$1[$2],$1[$3]] = [$1[$3], $1[$2]]"
-	},
-	"Odd": {
-		"scope": "typescript,javascript,typescriptreact,javascriptreact",
-		"prefix": "odd",
-		"body": "$1 & 1"
-	},
-	"Even": {
-		"scope": "typescript,javascript,typescriptreact,javascriptreact",
-		"prefix": "even",
-		"body": "$1 % 2 == 0"
+		"body": ";[$1[$2],$1[$3]] = [$1[$3], $1[$2]]",
+		"description": "Swap elements of the array"
 	},
 	"Math.max": {
 		"scope": "typescript,javascript,typescriptreact,javascriptreact",
@@ -62,37 +41,32 @@
 	},
 	"Math.abs": {
 		"scope": "typescript,javascript,typescriptreact,javascriptreact",
-		"prefix": "mas",
+		"prefix": "abs",
 		"body": "Math.abs($1)"
 	},
 	"Math.floor": {
 		"scope": "typescript,javascript,typescriptreact,javascriptreact",
-		"prefix": "flr",
+		"prefix": "floor",
 		"body": "Math.floor($1)"
 	},
 	"Math.ceil": {
 		"scope": "typescript,javascript,typescriptreact,javascriptreact",
-		"prefix": "cel",
+		"prefix": "ceil",
 		"body": "Math.ceil($1)"
 	},
 	"Convert to Number": {
 		"scope": "typescript,javascript,typescriptreact,javascriptreact",
-		"prefix": "cn",
+		"prefix": "int",
 		"body": "Number($1)"
 	},
 	"Convert to String": {
 		"scope": "typescript,javascript,typescriptreact,javascriptreact",
-		"prefix": "cs",
+		"prefix": "str",
 		"body": "String($1)"
 	},
 	"Convert to Boolean": {
 		"scope": "typescript,javascript,typescriptreact,javascriptreact",
-		"prefix": "cb",
+		"prefix": "bool",
 		"body": "Boolean($1)"
-	},
-	"Mod Operation": {
-		"scope": "typescript,javascript,typescriptreact,javascriptreact",
-		"prefix": "mod",
-		"body": "$1 % $2"
 	}
 }

@@ -1,0 +1,41 @@
+[
+	{
+		"link": "https:\/\/google.com\/search?q={Query}",
+		"name": "Search Google"
+	},
+	{
+		"link": "https:\/\/www.youtube.com\/results?search_query={Query}",
+		"name": "Search YouTube"
+	},
+	{
+		"link": "https:\/\/www.reddit.com\/search\/?q={Query}",
+		"name": "Search Reddit"
+	},
+	{
+		"link": "https:\/\/stackoverflow.com\/search?q={Query}",
+		"name": "Search Stack Overflow"
+	},
+	{
+		"link": "https:\/\/www.npmjs.com\/package\/{Query}",
+		"name": "Search NPM Package",
+		"iconName": "brand-npm-16"
+	},
+	{
+		"link": "https:\/\/bundlephobia.com\/package\/{Package}",
+		"name": "Search Bundlephobia"
+	},
+	{
+		"link": "https:\/\/hub.docker.com\/search?q={Query}",
+		"name": "Search Docker Hub"
+	},
+	{
+		"link": "https:\/\/github.com\/search?q={Query}&type=repositories",
+		"name": "Search Github"
+	},
+	{
+		"link": "https:\/\/developer.mozilla.org\/en-US\/search?q={Query}",
+		"name": "Search MDN"
+	},
+	{ "link": "https:\/\/ray.so\/{Query}", "name": "Search Raycast" },
+	{ "link": "https:\/\/tldraw.com", "name": "Paint" }
+]

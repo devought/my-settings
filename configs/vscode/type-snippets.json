@@ -1,46 +1,46 @@
 {
 	"Set type number": {
-		"scope": "typescript,typescriptreact,vue",
+		"scope": "typescript,typescriptreact",
 		"prefix": "n",
 		"body": "number"
 	},
 	"Set type number[]": {
-		"scope": "typescript,typescriptreact,vue",
+		"scope": "typescript,typescriptreact",
 		"prefix": "nn",
 		"body": "number[]"
 	},
 	"Set type number[][]": {
-		"scope": "typescript,typescriptreact,vue",
+		"scope": "typescript,typescriptreact",
 		"prefix": "nnn",
 		"body": "number[][]"
 	},
 	"Set type string": {
-		"scope": "typescript,typescriptreact,vue",
+		"scope": "typescript,typescriptreact",
 		"prefix": "s",
 		"body": "string"
 	},
 	"Set type string[]": {
-		"scope": "typescript,typescriptreact,vue",
+		"scope": "typescript,typescriptreact",
 		"prefix": "ss",
 		"body": "string[]"
 	},
 	"Set type string[][]": {
-		"scope": "typescript,typescriptreact,vue",
+		"scope": "typescript,typescriptreact",
 		"prefix": "sss",
 		"body": "string[][]"
 	},
 	"Set type boolean": {
-		"scope": "typescript,typescriptreact,vue",
+		"scope": "typescript,typescriptreact",
 		"prefix": "b",
 		"body": "boolean"
 	},
 	"Set type boolean[]": {
-		"scope": "typescript,typescriptreact,vue",
+		"scope": "typescript,typescriptreact",
 		"prefix": "bb",
 		"body": "boolean[]"
 	},
 	"Set type boolean[][]": {
-		"scope": "typescript,typescriptreact,vue",
+		"scope": "typescript,typescriptreact",
 		"prefix": "bbb",
 		"body": "boolean[][]"
 	}
