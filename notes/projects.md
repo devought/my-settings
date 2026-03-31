@@ -16,6 +16,18 @@ Private Chat Game Bot called `GuessOrLose` - Game where you will get random oppo
 4. Country
 5. Actor
 
+---
+
+Group Chat Game Bot basically the analog of current True Mafia Bot with improvements and bug fixes:
+
+1. No commands at all in group chat, no way to spam, everything is automated
+2. Nothing to purcahse, everything from drops
+3. Updated roles and their abilities
+4. No skip command
+5. Max 10 days. One side must manage to win before this day.
+6. If you win you get secret prize from bot
+7. Ability to give away prize to someone
+
 #### `VSCode Extensions`:
 
 ---
@@ -34,9 +46,23 @@ Private Chat Game Bot called `GuessOrLose` - Game where you will get random oppo
 
 Automated Trading System powered with AI and OpenClaw. It makes trades on ByBit & Binance and uses next sources to gather information:
 
-1. Telegram Channels
-2. Twitter Posts
-3. Binance Listings
+1. Telegram
+2. Twitter
+3. Binance
+
+---
+
+Cool and ultra fast, minimalistic portfolio site built with NextJS. It includes:
+
+1. Personal Information
+2. Education and Experience
+3. Github Projects
+4. Technology Stack & Expertise
+5. Gallery
+6. Articles
+7. Contacts
+
+---
 
 #### `Mobile Apps`:
 
@@ -107,38 +133,22 @@ Mobile App on React Native to learn something and train myself in areas:
     7. Git
     8. Github
     9. ESLint
-    10. Webpack
-    11. React
-    12. Redux
-    13. GraphQL
-    14. NextJS
-    15. Tailwind
-    16. Amazon Web Services
-    17. Linux
+    10. Chrome
+    11. Webpack
+    12. React
+    13. Redux
+    14. GraphQL
+    15. NextJS
+    16. Tailwind
+    17. Amazon Web Services
+    18. Linux
+    19. PostgreSQL
+    20. MongoDB
 - Competitive Programming:
     1. Leetcode Problems
     2. Codeforces Problems
-    3. Kattis Problems
 
-#### `Desktop Apps`:
-
----
-
-Cool minimalistic portfolio site built with NextJS. It includes:
-
-1. Personal Information
-2. Education and Experience
-3. Github Projects
-4. Technology Stack & Expertise
-5. Contacts
-6. Gallery
-7. Articles
-
-#### `Console CLI`:
-
----
-
-#### `Libraries`:
+#### `Educational`:
 
 1. Loop-JS: The Manual Event Loop
    The Goal: Build a custom task orchestrator that replicates how libuv manages the Macrotask and Microtask (Promises) queues.

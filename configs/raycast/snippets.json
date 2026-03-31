@@ -9,6 +9,7 @@
 	{ "name": "Tongue", "text": "👅👅👅", "keyword": "\\tongue" },
 	{ "name": "Rofl", "text": "🤣🤣🤣", "keyword": "\\rofl" },
 	{ "text": "😂😂😂", "keyword": "\\joy", "name": "Joy" },
+	{ "text": "😆😆😆", "keyword": "\\xd", "name": "Laugh" },
 	{ "text": "🤝🤝🤝", "keyword": "\\handshake", "name": "Handshake" },
 	{ "text": "👋👋👋", "keyword": "\\hello", "name": "Hello" },
 	{ "text": "👍👍👍", "keyword": "\\like", "name": "Like" },
@@ -52,7 +53,7 @@
 		"name": "Explain Stuff"
 	},
 	{
-		"text": "Пройдись по этому коду и выяви если есть проблемы по следующим категориям:\n\n1. Синтаксические ошибки\n2. Логическая ошибка\n3. Семантическая ошибка\n4. Производительность\n5. Читабельность\n\nБудь конкретен.\n\nВот код: \n```{argument name=\"Language\"}\n{clipboard}\n```",
+		"text": "Пройдись по этому коду и выяви если есть проблемы по следующим категориям:\n\n1. Синтаксические ошибки\n2. Логическая ошибка\n3. Семантическая ошибка\n4. Производительность\n5. Читабельность\n\nБудь конкретен.\n\nВот код: \n```typescript\n{clipboard}\n```",
 		"keyword": "\\review",
 		"name": "Review the Code"
 	},

@@ -20,6 +20,7 @@
 ### Phone Applications:
 
 - Telegram
+- Whatsapp
 - Chrome
 - Phantom
 - Raycast
@@ -38,7 +39,8 @@
 
 ### Subscriptions:
 
-- Claude
+- OpenAI
+- Anthropic
 - Google Drive
 - Puzzle Movies
 
@@ -93,6 +95,9 @@
 - [Web Development](https://my-js.org/docs/guide/intro-guide)
 - [Learn JavaScript](https://learn.javascript.ru/)
 - [Learn Git](https://git-scm.com/book/en/v2)
+- [Learn AWS](https://www.geeksforgeeks.org/devops/aws-tutorial/)
+- [Learn Linux](https://www.kea.nu/files/textbooks/humblesec/thelinuxcommandline.pdf)
+- [Build Projects](https://www.youtube.com/@javascriptmastery)
 
 ### Tools
 
@@ -147,22 +152,24 @@
 7. mobx
 8. react query
 9. tanstack query
-10. tailwindcss
-11. postcss
-12. scss
-13. bootstrap
-14. chakraui
-15. materialui
-16. shadcn
-17. refine
-18. magicui
-19. ant design
-20. d3.js
-21. recharts
-22. chart.js
-23. threejs
-24. anime.js
-25. framer motion
+10. effector
+11. recoil
+12. tailwindcss
+13. postcss
+14. scss
+15. bootstrap
+16. chakraui
+17. materialui
+18. shadcn
+19. refine
+20. magicui
+21. ant design
+22. d3.js
+23. recharts
+24. chart.js
+25. threejs
+26. anime.js
+27. framer motion
 
 #### Backend Frameworks
 

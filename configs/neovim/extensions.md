@@ -6,7 +6,7 @@
 
 ## LSP Servers (via Mason)
 
-- ts_ls - TypeScript / JavaScript
+- typescript_language_server - TypeScript / JavaScript
 - eslint - Linting
 - prettier - Formatting
 

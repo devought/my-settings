@@ -73,3 +73,23 @@ return {
 }
 EOF
 ```
+
+### Italics disabler
+
+```bash
+cat > ~/.config/nvim/lua/plugins/theme.lua << 'EOF'
+return {
+  {
+    "folke/tokyonight.nvim",
+    opts = {
+      styles = {
+        comments = { italic = false },
+        keywords = { italic = false },
+        functions = { italic = false },
+        variables = { italic = false },
+      },
+    },
+  },
+}
+EOF
+```

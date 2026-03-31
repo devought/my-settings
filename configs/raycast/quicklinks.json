@@ -37,5 +37,8 @@
 		"name": "Search MDN"
 	},
 	{ "link": "https:\/\/ray.so\/{Query}", "name": "Search Raycast" },
-	{ "link": "https:\/\/tldraw.com", "name": "Paint" }
+	{ "link": "https:\/\/tldraw.com", "name": "Paint" },
+	{ "link": "file:///Users/eldos/Downloads", "name": "Downloads" },
+	{ "link": "file:///Users/eldos/Documents", "name": "Documents" },
+	{ "link": "file:///Applications", "name": "Applications" }
 ]

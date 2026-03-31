@@ -1,83 +1,60 @@
-Development Tools:
+## Competitive Programming Setup
 
-- brew
-- node
-- npm
-- yarn
-- pnpm
-- bun
-- deno
-- tsc
-- tsx
-- git
-- docker
-- kubectl
-- minikube
-- helm
-- protobuf
-- terraform
-- ffmpeg
-- yt-dlp
-- aws
-- gh
-- railway
-- vercel
-- nvm
-- fnm
-- pm2
+Personal competitive programming workspace with TypeScript setup and development configs.
 
-CLI:
+## Structure
 
-- yazi
-- bat
-- fzf
-- zoxide
-- ripgrep
-- clipboard
-- eza
-- lazygit
-- lazydocker
-- jq
-- httpie
-- mole
+```
+coding/
+├── configs/          # Dev tool configurations
+│   ├── ghostty/      # Terminal settings
+│   ├── macos/        # macOS keybindings
+│   ├── neovim/       # Neovim setup & shortcuts
+│   ├── raycast/      # Raycast quicklinks
+│   └── vscode/       # VSCode settings
+├── notes/            # Learning notes & problem breakdowns
+├── src/              # Solutions
+│   ├── lib/          # Shared utilities & helpers
+│   ├── scripts/      # Automation scripts
+│   ├── main.ts       # ← Write your solution here
+│   └── test.txt      # ← Write test cases here
+└── README.md
+```
 
-Protocols and Linux Tools:
+## Getting Started
 
-- ssh
-- nginx
-- bitnami
-- curl
-- nmap
-- dig
-- chmod
-- chown
-- openssl
-- host
-- route
-- apache
-- sudo
-- apt
-- pacman
-- flatpak
-- systemctl
-- htop
-- du
-- df
-- wget
-- ping
-- telnet
-- traceroute
-- tracepath
-- netstat
-- nslookup
-- ifconfig
-- ipconfig
-- whois
-- whoami
-- netcat
-- rsync
-- lsof
-- tcpdump
-- hashcat
-- ngrok
-- scp
+### Prerequisites
+
+- [Node.js](https://nodejs.org) v18+
+- [TypeScript](https://www.typescriptlang.org)
+
+```bash
+npm install -g typescript ts-node
+```
+
+### Setup
+
+```bash
+git clone <your-repo-url>
+cd coding
+npm install
+```
+
+### Solving Problems
+
+1. Open `src/main.ts` and write your solution
+2. Add test cases in `src/test.txt`
+3. Run your solution:
+
+```bash
+ts-node src/main.ts
+```
+
+## Editor
+
+Configured for both **VSCode** and **Neovim (LazyVim)** with:
+
+- TypeScript LSP
+- Prettier (format on save)
+- ESLint
+- Tailwind CSS support

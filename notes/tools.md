@@ -1,0 +1,83 @@
+Development Tools:
+
+- brew
+- node
+- npm
+- yarn
+- pnpm
+- bun
+- deno
+- tsc
+- tsx
+- git
+- docker
+- kubectl
+- minikube
+- helm
+- protobuf
+- terraform
+- ffmpeg
+- yt-dlp
+- aws
+- gh
+- railway
+- vercel
+- nvm
+- fnm
+- pm2
+
+CLI:
+
+- yazi
+- bat
+- fzf
+- zoxide
+- ripgrep
+- clipboard
+- eza
+- lazygit
+- lazydocker
+- jq
+- httpie
+- mole
+
+Protocols and Linux Tools:
+
+- ssh
+- nginx
+- bitnami
+- curl
+- nmap
+- dig
+- chmod
+- chown
+- openssl
+- host
+- route
+- apache
+- sudo
+- apt
+- pacman
+- flatpak
+- systemctl
+- htop
+- du
+- df
+- wget
+- ping
+- telnet
+- traceroute
+- tracepath
+- netstat
+- nslookup
+- ifconfig
+- ipconfig
+- whois
+- whoami
+- netcat
+- rsync
+- lsof
+- tcpdump
+- hashcat
+- ngrok
+- scp

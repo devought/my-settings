@@ -1,5 +1,5 @@
 font-family = "Lab Mono" 
-font-size = 24
+font-size = 16
 font-thicken = true
 
 cursor-style = bar

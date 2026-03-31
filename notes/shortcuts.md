@@ -219,15 +219,11 @@
 1. `J` - rewind 10 seconds
 2. `L` - skip forward 10 seconds
 3. `0-9` - jump to 0%-90% of video
-4. `,` - step backward one frame (while paused)
-5. `.` - step forward one frame (while paused)
 
 #### Chapters & Playlist:
 
 1. `Shift + P` - previous video
 2. `Shift + N` - next video
-3. `Option + Left` - seek to previous chapter
-4. `Option + Right` - seek to next chapter
 
 #### View:
 
@@ -240,13 +236,6 @@
 
 1. `C` - toggle captions on / off
 2. `O` - cycle through caption text opacity levels
-
-#### Spherical Videos:
-
-1. `W` - pan up
-2. `A` - pan left
-3. `S` - pan down
-4. `D` - pan right
 
 #### Other:
 
@@ -264,6 +253,7 @@
 6. `Cmd + 1-5` - jump to pinned chat by number
 7. `Control + Tab` - switch to next chat
 8. `Control + Shift + Tab` - switch to previous chat
+9. `Option + Up / Down` - switch between chats
 
 #### Messaging:
 
