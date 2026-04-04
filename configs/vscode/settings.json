@@ -37,9 +37,6 @@
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.fontSize": 12,
 
-	"markdown.preview.fontFamily": "Lab Mono",
-	"markdown.preview.fontSize": 14,
-
 	"[prisma]": { "editor.defaultFormatter": "Prisma.prisma" },
 	"[snippets]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
@@ -78,6 +75,5 @@
 	"workbench.iconTheme": "flow-deep",
 	"flow-icons.hidesExplorerArrows": true,
 	"editor.accessibilitySupport": "off",
-	"workbench.editor.showTabs": "single",
-	"workbench.colorTheme": "Default Dark+"
+	"workbench.editor.showTabs": "single"
 }

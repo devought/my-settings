@@ -22,11 +22,11 @@ Group Chat Game Bot basically the analog of current True Mafia Bot with improvem
 
 1. No commands at all in group chat, no way to spam, everything is automated
 2. Nothing to purcahse, everything from drops
-3. Updated roles and their abilities
-4. No skip command
-5. Max 10 days. One side must manage to win before this day.
-6. If you win you get secret prize from bot
-7. Ability to give away prize to someone
+3. Different game modes
+4. Updated roles and their abilities
+5. No skip command
+6. Max 10 days. One side must manage to win before this day.
+7. If you win you get secret prize from bot
 
 #### `VSCode Extensions`:
 
@@ -36,9 +36,33 @@ Group Chat Game Bot basically the analog of current True Mafia Bot with improvem
 
 ---
 
+Custom extension for Raycast that transforms raw notes into clean, structured, and readable summaries using AI — with seamless integration into Obsidian. It can:
+
+1. Rewrite messy notes into clean markdown
+2. Generate structured summaries
+3. Preview before saving
+4. Autogenerate tags and titles
+
+---
+
+Extension aggregator of modern LLMS like Anthropic Claude, OpenAI, Google Gemini, DeepSeek to compare them in:
+
+1. Competitive programming
+2. Documentation replacement
+3. Critical thinking
+4. Software Engineering
+5. Computer Science
+6. Bug fixing
+
 #### `Chrome Extensions`:
 
 ---
+
+Dark mode extension that adapts to the colors of the site and makes beautiful dark mode, does not affect to the local running sites
+
+---
+
+Magic rephraser extension powered with AI. If you do not get some paragraph on the page you can highlight it and get simplified version
 
 #### `Web Apps`:
 
@@ -56,11 +80,12 @@ Cool and ultra fast, minimalistic portfolio site built with NextJS. It includes:
 
 1. Personal Information
 2. Education and Experience
-3. Github Projects
+3. Projects
 4. Technology Stack & Expertise
 5. Gallery
-6. Articles
-7. Contacts
+6. Achievements
+7. Articles
+8. Contacts
 
 ---
 
@@ -102,6 +127,8 @@ Mobile App on React Native to learn something and train myself in areas:
     25. Inventors
     26. Kingdoms
     27. Parties
+    28. Autonomies
+    29. Facts
 - Computer Science:
     1. Algorithms & Data structures
     2. Discrete Math
@@ -147,6 +174,7 @@ Mobile App on React Native to learn something and train myself in areas:
 - Competitive Programming:
     1. Leetcode Problems
     2. Codeforces Problems
+    3. CSAcademy Problems
 
 #### `Educational`:
 

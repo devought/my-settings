@@ -61,6 +61,7 @@
 5. `Cmd + 9` - switch to last tab
 6. `Ctrl + Tab` - next tab
 7. `Ctrl + Shift + Tab` - previous tab
+8. `Cmd + Option + Left / Right` - go to left / right tab
 
 #### Windows:
 
@@ -202,8 +203,9 @@
 
 #### Custom Tasks:
 
-1. `Cmd + Shift + R` - Run task `Build & Copy` (esbuild + pbcopy)
-2. `Cmd + '` - Run task `Test` (ts-node)
+1. `Cmd + Shift + L` - Run task `Build & Copy` (esbuild + pbcopy)
+2. `Cmd + Shift + K` - Run task `Test` (ts-node)
+3. `Cmd + Shift + '` - Run task `Format` (prettier)
 
 ### YouTube:
 
@@ -230,7 +232,8 @@
 1. `F` - toggle fullscreen
 2. `T` - toggle theater mode
 3. `I` - toggle miniplayer
-4. `Esc` - close miniplayer or current dialog
+4. `/` - go to search bar
+5. `Esc` - close miniplayer or current dialog
 
 #### Subtitles:
 

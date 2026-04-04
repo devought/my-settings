@@ -29,6 +29,7 @@ Development Tools:
 CLI:
 
 - yazi
+- neovim
 - bat
 - fzf
 - zoxide
@@ -40,12 +41,12 @@ CLI:
 - jq
 - httpie
 - mole
+- neofetch
 
 Protocols and Linux Tools:
 
 - ssh
 - nginx
-- bitnami
 - curl
 - nmap
 - dig
@@ -56,9 +57,6 @@ Protocols and Linux Tools:
 - route
 - apache
 - sudo
-- apt
-- pacman
-- flatpak
 - systemctl
 - htop
 - du
@@ -71,13 +69,11 @@ Protocols and Linux Tools:
 - netstat
 - nslookup
 - ifconfig
-- ipconfig
 - whois
 - whoami
 - netcat
 - rsync
 - lsof
 - tcpdump
-- hashcat
 - ngrok
 - scp

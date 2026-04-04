@@ -1,9 +1,9 @@
 export class Heap<T> {
-	private heap: T[] = [];
-	private cb: (a: T, b: T) => boolean;
+	private heap: T[] = []
+	private cb: (a: T, b: T) => boolean
 
 	constructor(cb: (a: T, b: T) => boolean) {
-		this.cb = cb;
+		this.cb = cb
 	}
 
 	/**
@@ -12,33 +12,33 @@ export class Heap<T> {
 	 * @returns Ничего не возвращает
 	 */
 	push(value: T) {
-		this.heap.push(value);
-		this.emerge(this.heap.length - 1);
+		this.heap.push(value)
+		this.emerge(this.heap.length - 1)
 	}
 
 	/**
 	 * @description Удаляем и возвращаем корень (элемент с наивысшим приоритетом). Последний элемент переносим в корень и "опускаем" его вниз, пока он не встанет на правильное место.
 	 */
 	pop() {
-		if (this.heap.length === 0) return null;
-		if (this.heap.length === 1) return this.heap.pop()!;
+		if (this.heap.length === 0) return null
+		if (this.heap.length === 1) return this.heap.pop()!
 
-		const topNode = this.heap[0];
-		this.heap[0] = this.heap.pop()!;
-		this.sink(0);
-		return topNode;
+		const topNode = this.heap[0]
+		this.heap[0] = this.heap.pop()!
+		this.sink(0)
+		return topNode
 	}
 
 	size() {
-		return this.heap.length;
+		return this.heap.length
 	}
 
 	peek() {
-		return this.isEmpty() ? null : this.heap[0];
+		return this.isEmpty() ? null : this.heap[0]
 	}
 
 	isEmpty() {
-		return this.size() === 0;
+		return this.size() === 0
 	}
 
 	// "Опускаем" элемент вниз по куче:
@@ -46,28 +46,28 @@ export class Heap<T> {
 	// с тем ребёнком, у которого приоритет выше, пока он не станет
 	// больше (для max-heap) или меньше (для min-heap) обоих детей.
 	private sink(index: number) {
-		const { heap, cb } = this;
-		const n = heap.length;
+		const { heap, cb } = this
+		const n = heap.length
 
 		while (true) {
-			const leftCh = 2 * index + 1;
-			const rightCh = 2 * index + 2;
-			let candidate = index;
+			const leftCh = 2 * index + 1
+			const rightCh = 2 * index + 2
+			let candidate = index
 
 			// если левый ребёнок имеет приоритет выше, чем текущий кандидат
 			if (leftCh < n && cb(heap[candidate], heap[leftCh])) {
-				candidate = leftCh;
+				candidate = leftCh
 			}
 			// если правый ребёнок имеет приоритет выше, чем текущий кандидат
 			if (rightCh < n && cb(heap[candidate], heap[rightCh])) {
-				candidate = rightCh;
+				candidate = rightCh
 			}
 
 			// если ни один ребёнок не лучше — мы на правильной позиции
-			if (candidate === index) break;
+			if (candidate === index) break
 
-			this.swap(index, candidate);
-			index = candidate;
+			this.swap(index, candidate)
+			index = candidate
 		}
 	}
 
@@ -75,16 +75,16 @@ export class Heap<T> {
 	// пока у узла приоритет выше, чем у его родителя, меняем их местами.
 	private emerge(index: number) {
 		while (index > 0) {
-			const parent = Math.floor((index - 1) / 2);
+			const parent = Math.floor((index - 1) / 2)
 			// если текущий элемент имеет приоритет выше, чем родитель
 			if (this.cb(this.heap[parent], this.heap[index])) {
-				this.swap(index, parent);
-				index = parent;
-			} else break;
+				this.swap(index, parent)
+				index = parent
+			} else break
 		}
 	}
 
 	private swap(i: number, j: number) {
-		[this.heap[i], this.heap[j]] = [this.heap[j], this.heap[i]];
+		;[this.heap[i], this.heap[j]] = [this.heap[j], this.heap[i]]
 	}
 }

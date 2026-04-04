@@ -1,19 +1,19 @@
 class ListNode<T> {
-	key: number;
-	value: T;
-	previous: ListNode<T> | null = null;
-	next: ListNode<T> | null = null;
+	key: number
+	value: T
+	previous: ListNode<T> | null = null
+	next: ListNode<T> | null = null
 
 	constructor(key: number, value: T) {
-		this.key = key;
-		this.value = value;
+		this.key = key
+		this.value = value
 	}
 }
 
 export class List<T> {
-	private head: ListNode<T> | null = null;
-	private tail: ListNode<T> | null = null;
-	private count: number = 0;
+	private head: ListNode<T> | null = null
+	private tail: ListNode<T> | null = null
+	private count: number = 0
 
 	constructor() {}
 
@@ -23,16 +23,16 @@ export class List<T> {
 	 * @param value Значение нового узла.
 	 */
 	addTail(key: number, value: T): void {
-		const newNode = new ListNode(key, value);
+		const newNode = new ListNode(key, value)
 		if (!this.tail) {
-			this.head = newNode;
-			this.tail = newNode;
+			this.head = newNode
+			this.tail = newNode
 		} else {
-			this.tail.next = newNode;
-			newNode.previous = this.tail;
-			this.tail = newNode;
+			this.tail.next = newNode
+			newNode.previous = this.tail
+			this.tail = newNode
 		}
-		this.count++;
+		this.count++
 	}
 
 	/**
@@ -41,16 +41,16 @@ export class List<T> {
 	 * @param value Значение нового узла.
 	 */
 	addHead(key: number, value: T): void {
-		const newNode = new ListNode(key, value);
+		const newNode = new ListNode(key, value)
 		if (!this.head) {
-			this.head = newNode;
-			this.tail = newNode;
+			this.head = newNode
+			this.tail = newNode
 		} else {
-			this.head.previous = newNode;
-			newNode.next = this.head;
-			this.head = newNode;
+			this.head.previous = newNode
+			newNode.next = this.head
+			this.head = newNode
 		}
-		this.count++;
+		this.count++
 	}
 
 	/**
@@ -58,20 +58,20 @@ export class List<T> {
 	 * @returns Удаленный узел или null, если список пуст.
 	 */
 	popTail(): ListNode<T> | null {
-		if (!this.tail) return null;
+		if (!this.tail) return null
 
-		const poppedNode = this.tail;
-		this.tail = poppedNode.previous;
+		const poppedNode = this.tail
+		this.tail = poppedNode.previous
 
 		if (this.tail) {
-			this.tail.next = null;
+			this.tail.next = null
 		} else {
-			this.head = null; // Список стал пустым
+			this.head = null // Список стал пустым
 		}
 
-		this.count--;
-		poppedNode.previous = null; // Очищаем ссылки для удаленного узла
-		return poppedNode;
+		this.count--
+		poppedNode.previous = null // Очищаем ссылки для удаленного узла
+		return poppedNode
 	}
 
 	/**
@@ -79,20 +79,20 @@ export class List<T> {
 	 * @returns Удаленный узел или null, если список пуст.
 	 */
 	popHead(): ListNode<T> | null {
-		if (!this.head) return null;
+		if (!this.head) return null
 
-		const poppedNode = this.head;
-		this.head = poppedNode.next;
+		const poppedNode = this.head
+		this.head = poppedNode.next
 
 		if (this.head) {
-			this.head.previous = null;
+			this.head.previous = null
 		} else {
-			this.tail = null; // Список стал пустым
+			this.tail = null // Список стал пустым
 		}
 
-		this.count--;
-		poppedNode.next = null; // Очищаем ссылки для удаленного узла
-		return poppedNode;
+		this.count--
+		poppedNode.next = null // Очищаем ссылки для удаленного узла
+		return poppedNode
 	}
 
 	/**
@@ -100,7 +100,7 @@ export class List<T> {
 	 * @returns Узел хвоста или null, если список пуст.
 	 */
 	peekTail(): ListNode<T> | null {
-		return this.tail;
+		return this.tail
 	}
 
 	/**
@@ -108,7 +108,7 @@ export class List<T> {
 	 * @returns Узел головы или null, если список пуст.
 	 */
 	peekHead(): ListNode<T> | null {
-		return this.head;
+		return this.head
 	}
 
 	/**
@@ -116,10 +116,10 @@ export class List<T> {
 	 * @param callbackfn Функция, принимающая value, key и ссылку на текущий список.
 	 */
 	forEach(callbackfn: (value: T, key: number, list: List<T>) => void): void {
-		let current = this.head;
+		let current = this.head
 		while (current) {
-			callbackfn(current.value, current.key, this);
-			current = current.next;
+			callbackfn(current.value, current.key, this)
+			current = current.next
 		}
 	}
 
@@ -128,9 +128,9 @@ export class List<T> {
 	 * @returns Массив, содержащий значения всех узлов.
 	 */
 	toArray(): T[] {
-		const result: T[] = [];
-		this.forEach((value) => result.push(value));
-		return result;
+		const result: T[] = []
+		this.forEach((value) => result.push(value))
+		return result
 	}
 
 	/**
@@ -139,12 +139,12 @@ export class List<T> {
 	 * @returns true, если значение найдено, иначе false.
 	 */
 	includes(value: T): boolean {
-		let current = this.head;
+		let current = this.head
 		while (current) {
-			if (current.value === value) return true;
-			current = current.next;
+			if (current.value === value) return true
+			current = current.next
 		}
-		return false;
+		return false
 	}
 
 	/**
@@ -153,11 +153,11 @@ export class List<T> {
 	 * @returns Новый список с преобразованными значениями.
 	 */
 	map<U>(callbackfn: (value: T, key: number) => U): List<U> {
-		const newList = new List<U>();
+		const newList = new List<U>()
 		this.forEach((value, key) => {
-			newList.addTail(key, callbackfn(value, key));
-		});
-		return newList;
+			newList.addTail(key, callbackfn(value, key))
+		})
+		return newList
 	}
 
 	/**
@@ -170,16 +170,16 @@ export class List<T> {
 		callbackfn: (
 			previousValue: U,
 			currentValue: T,
-			currentIndex: number,
+			currentIndex: number
 		) => U,
-		initialValue: U,
+		initialValue: U
 	): U {
-		let accumulator = initialValue;
-		let index = 0;
+		let accumulator = initialValue
+		let index = 0
 		this.forEach((value) => {
-			accumulator = callbackfn(accumulator, value, index++);
-		});
-		return accumulator;
+			accumulator = callbackfn(accumulator, value, index++)
+		})
+		return accumulator
 	}
 
 	/**
@@ -188,35 +188,35 @@ export class List<T> {
 	 * @returns Новый список отфильтрованных элементов.
 	 */
 	filter(callbackfn: (value: T, key: number) => boolean): List<T> {
-		const newList = new List<T>();
+		const newList = new List<T>()
 		this.forEach((value, key) => {
 			if (callbackfn(value, key)) {
 				// Используем исходный ключ для нового списка
-				newList.addTail(key, value);
+				newList.addTail(key, value)
 			}
-		});
-		return newList;
+		})
+		return newList
 	}
 
 	/**
 	 * Меняет порядок элементов в списке на противоположный (мутирует текущий список).
 	 */
 	reverse(): void {
-		let current = this.head;
-		let temp: ListNode<T> | null = null;
+		let current = this.head
+		let temp: ListNode<T> | null = null
 
 		// Меняем местами next и previous для каждого узла
 		while (current) {
-			temp = current.previous;
-			current.previous = current.next;
-			current.next = temp;
-			current = current.previous; // Двигаемся к следующему (который был предыдущим)
+			temp = current.previous
+			current.previous = current.next
+			current.next = temp
+			current = current.previous // Двигаемся к следующему (который был предыдущим)
 		}
 
 		// Меняем местами head и tail списка
-		temp = this.head;
-		this.head = this.tail;
-		this.tail = temp;
+		temp = this.head
+		this.head = this.tail
+		this.tail = temp
 	}
 
 	/**
@@ -224,11 +224,11 @@ export class List<T> {
 	 * @returns Новый экземпляр списка с теми же элементами.
 	 */
 	copy(): List<T> {
-		const newList = new List<T>();
+		const newList = new List<T>()
 		this.forEach((value, key) => {
-			newList.addTail(key, value);
-		});
-		return newList;
+			newList.addTail(key, value)
+		})
+		return newList
 	}
 
 	/**
@@ -236,6 +236,6 @@ export class List<T> {
 	 * @returns Размер списка.
 	 */
 	size(): number {
-		return this.count;
+		return this.count
 	}
 }

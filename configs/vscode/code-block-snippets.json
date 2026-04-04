@@ -23,6 +23,12 @@
 		"body": ["$1.set($2, ($1.get($2) ?? 0) + 1)"],
 		"description": "Increment a frequency map entry"
 	},
+	"Create Frequency Array": {
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"prefix": "fel",
+		"body": ["Array.from({length: 26}, () => $1)"],
+		"description": "Creates frequency array for either lowercase or uppercase letters"
+	},
 	"Swapper": {
 		"scope": "typescript,javascript,typescriptreact,javascriptreact",
 		"prefix": "swap",
@@ -41,7 +47,7 @@
 	},
 	"Math.abs": {
 		"scope": "typescript,javascript,typescriptreact,javascriptreact",
-		"prefix": "abs",
+		"prefix": "mas",
 		"body": "Math.abs($1)"
 	},
 	"Math.floor": {

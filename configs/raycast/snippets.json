@@ -8,73 +8,80 @@
 	{ "name": "Clown", "text": "🤡🤡🤡", "keyword": "\\clown" },
 	{ "name": "Tongue", "text": "👅👅👅", "keyword": "\\tongue" },
 	{ "name": "Rofl", "text": "🤣🤣🤣", "keyword": "\\rofl" },
-	{ "text": "😂😂😂", "keyword": "\\joy", "name": "Joy" },
-	{ "text": "😆😆😆", "keyword": "\\xd", "name": "Laugh" },
-	{ "text": "🤝🤝🤝", "keyword": "\\handshake", "name": "Handshake" },
-	{ "text": "👋👋👋", "keyword": "\\hello", "name": "Hello" },
-	{ "text": "👍👍👍", "keyword": "\\like", "name": "Like" },
-	{ "text": "👎👎👎", "keyword": "\\dislike", "name": "Dislike" },
-	{ "text": "🔥🔥🔥", "keyword": "\\fire", "name": "Fire" },
-	{ "text": "abchikuei@gmail.com", "keyword": "\\email", "name": "Email" },
-	{ "text": "87066735790", "keyword": "\\phone", "name": "Phone" },
+	{ "name": "Joy", "text": "😂😂😂", "keyword": "\\joy" },
+	{ "name": "Handshake", "text": "🤝🤝🤝", "keyword": "\\handshake" },
+	{ "name": "Hello", "text": "👋👋👋", "keyword": "\\hello" },
+	{ "name": "Like", "text": "👍👍👍", "keyword": "\\like" },
+	{ "name": "Dislike", "text": "👎👎👎", "keyword": "\\dislike" },
+	{ "name": "Fire", "text": "🔥🔥🔥", "keyword": "\\fire" },
+	{ "name": "Email", "text": "abchikuei@gmail.com", "keyword": "\\email" },
+	{ "name": "Phone", "text": "87066735790", "keyword": "\\phone" },
 	{
+		"name": "Address",
 		"text": "Kazakhstan, Almaty, Kokterek 139",
-		"keyword": "\\address",
-		"name": "Address"
+		"keyword": "\\address"
 	},
 	{
+		"name": "Telegram",
 		"text": "https:\/\/t.me\/abchikuei",
-		"keyword": "\\telegram",
-		"name": "Telegram"
+		"keyword": "\\telegram"
 	},
 	{
+		"name": "Profile",
 		"text": "https:\/\/abchikuei.com",
-		"keyword": "\\profile",
-		"name": "Profile"
+		"keyword": "\\profile"
 	},
 	{
+		"name": "Github",
 		"text": "https:\/\/github.com\/abchikuei",
-		"keyword": "\\github",
-		"name": "Github"
+		"keyword": "\\github"
 	},
 	{
+		"name": "Linkedin",
 		"text": "https:\/\/www.linkedin.com\/in\/eldos-kurban-3807613b7",
-		"keyword": "\\linkedin",
-		"name": "Linkedin"
+		"keyword": "\\linkedin"
 	},
 	{
+		"name": "Base Prompt",
 		"text": "Я студент программист. Мне всегда интересно изучать технологии и концепции из мира IT. Я люблю когда собеседник отвечает простыми словами и умеет объяснять сложные вещи сперва аналогиями из жизни и приводя примеры а затем уже детально разбирать каждый этап. Я работаю как FullStack NodeJS разработчик и полностью погружен в JS\/TS экосистему и использую только эти языки. В качестве операционной системы я использую MacOS и использую эти программы для работы:\n\n1. Raycast\n2. Homebrew\n3. Visual Studio Code\n4. Docker\n5. Insomnia\n6. Ghostty\n7. Google Chrome\n8. Anthropic Claude\n9. Telegram\n\nОсновной стек технологии которые я использую \/ учу \/ планирую выучить:\n\n1. Git \/ Github \/ Gitlab\n2. Docker \/ Kubernetes\n3. Bash \/ Linux\n4. ES6+ \/ TypeScript\n5. Node \/ Bun\n6. Webpack \/ Vite \/ ESBuild \/ etc.\n7. HTML \/ CSS \/ JS\n8. React \/ NextJS \/ etc.\n9. Redux \/ MobX \/ Zustand\n10. Amazon Web Services\n11. Related Technologies\n\nТак же я сильно вовлечен в следующих науках:\n\n1. Алгоритмы и структура данных\n2. Программная инженерия\n3. Компьютерная наука\n4. Основы сети и интернета\n5. Облачные вычисления\n6. Веб разработка\n\nЯ буду спрашивать разного рода вопросов и учиться у тебя этим наукам. Твоя задача максимально доходчиво отвечать на вопросы и не отклоняться от темы.",
-		"keyword": "\\base",
-		"name": "Base Prompt"
+		"keyword": "\\base"
 	},
 	{
+		"name": "Explain Stuff",
 		"text": "Объясни мне {argument name=\"Stuff\"} ясно и коротко. Я хочу знать:\n\n1. Что эта за штука и какие у нее юзкейсы\n2. Как устроен внутри\n3. Какие аналоги имеются\n4. Чем отличается от других аналогов\n5. Покажи примеры как использовать эту штуку",
-		"keyword": "\\explain",
-		"name": "Explain Stuff"
+		"keyword": "\\explain"
 	},
 	{
-		"text": "Пройдись по этому коду и выяви если есть проблемы по следующим категориям:\n\n1. Синтаксические ошибки\n2. Логическая ошибка\n3. Семантическая ошибка\n4. Производительность\n5. Читабельность\n\nБудь конкретен.\n\nВот код: \n```typescript\n{clipboard}\n```",
-		"keyword": "\\review",
-		"name": "Review the Code"
+		"name": "Review",
+		"text": "Пройдись по этому коду и выяви если есть проблемы по следующим категориям:\n\n1. Синтаксические ошибки\n2. Логическая ошибка\n3. Семантическая ошибка\n4. Производительность\n5. Читабельность\n6. Есть ли edge кейсы и проходит ли их мой алгоритм\n\nБудь конкретен.\n\nВот код: \n```typescript\n{clipboard}\n```",
+		"keyword": "\\review"
 	},
 	{
+		"name": "Find the Error",
 		"text": "В этом коде есть какой то баг. Найди этот баг и объясни из за чего этот баг всплывает.\n\nВот код: {clipboard}\n\nВот ошибка которую я получаю: {argument name=\"Error Message\"}\n\nВот контекст для понимания: {argument name=\"Context\"}",
-		"keyword": "\\error",
-		"name": "Find the Error"
+		"keyword": "\\error"
 	},
 	{
+		"name": "Explain Concept",
 		"text": "Объясни на пальцах {argument name=\"Concept\"}. Старайся выразить себя простыми словами и желательно используй иллюстрации и аналогии для ясности. Я хочу знать:\n\n1. Что из себя оно представляет\n2. Какие проблемы решает\n3. Как работает (интуитивно)\n4. Примеры использования\n5. Модифицированные версии (если есть таковы)\n",
-		"keyword": "\\concept",
-		"name": "Explain Concept"
+		"keyword": "\\concept"
 	},
 	{
+		"name": "Explain the Problem",
 		"text": "Объясни мне задачу {argument name=\"Problem\"} из {argument name=\"Platform\"}. Я хочу чтобы ты разобрал следующие вопросы:\n\n1. Что дано в инпуте?\n2. Что от нас хотят (интиутивно)?\n3. Какие возможные пути решение есть у этой задачи?\n4. Какой путь ты выбрал бы?",
-		"keyword": "\\problem",
-		"name": "Explain the Problem"
+		"keyword": "\\problem"
 	},
 	{
+		"name": "Explain the Word",
 		"text": "Что означает слово\/акроним {argument name=\"Word\"}. Так же ответь на эти вопросы:\n\n1. Значение этого слова\n2. Как используется в предложениях\n3. Приведи примеры на 3 языках: (Английский, Русский, Казахский)\n",
-		"keyword": "\\word",
-		"name": "Explain the Word"
+		"keyword": "\\word"
+	},
+	{ "name": "Laugh", "text": "😆😆😆", "keyword": "\\xd" },
+	{ "name": "Typescript", "text": "typescript", "keyword": "\\ts" },
+	{ "name": "Javascript", "text": "javascript", "keyword": "\\js" },
+	{
+		"name": "Markdown Link",
+		"text": "[{argument name=\"Text\"}]({clipboard})",
+		"keyword": "\\link"
 	}
 ]

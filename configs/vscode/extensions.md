@@ -8,7 +8,6 @@
 - Dotenv
 - ESLint
 - Flow Icons
-- GitLens
 - HTML CSS Support
 - Path Intellisense
 - Prettier

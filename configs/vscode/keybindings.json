@@ -10,6 +10,11 @@
 		"args": "Test"
 	},
 	{
+		"key": "shift+cmd+'",
+		"command": "workbench.action.tasks.runTask",
+		"args": "Format"
+	},
+	{
 		"key": "shift+cmd+j",
 		"command": "workbench.files.action.collapseExplorerFolders"
 	},

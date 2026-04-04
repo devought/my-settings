@@ -1,103 +1,192 @@
 ### Languages:
 
-- Kazakh
-- Russian
-- English
+1. Kazakh
+2. Russian
+3. English
+
+### Programming Languages:
+
+1. JavaScript `VSCode`
+2. TypeScript `VSCode`
+3. Cpp `Neovim`
+4. Python `Neovim`
 
 ### Laptop Applications:
 
-- VSCode
-- Insomnia
-- Docker
-- Chrome
-- Telegram
-- NordVpn
-- Raycast
-- Slack
-- Ghostty
-- Discord
+1. VSCode
+2. Insomnia
+3. Docker
+4. Chrome
+5. Telegram
+6. NordVpn
+7. Raycast
+8. Slack
+9. Ghostty
+10. Discord
+11. Obsidian
+12. Claude
+13. Spotify
 
 ### Phone Applications:
 
-- Telegram
-- Whatsapp
-- Chrome
-- Phantom
-- Raycast
-- Slack
-- Yandex Go
-- NordVpn
-- Freedom
-- Kaspi
-- Halyk
-- Otbasy
-- Paypal
-- Onay
-- LinkedIn
-- Google 2FA
-- IZI
-
-### Subscriptions:
-
-- OpenAI
-- Anthropic
-- Google Drive
-- Puzzle Movies
+1. Telegram
+2. Whatsapp
+3. Chrome
+4. Phantom
+5. Spotify
+6. Claude
+7. Raycast
+8. Slack
+9. Yandex Go
+10. NordVpn
+11. Freedom
+12. Kaspi
+13. Halyk
+14. Otbasy
+15. Paypal
+16. Onay
+17. LinkedIn
+18. Google 2FA
+19. Obsidian
+20. IZI
 
 ### Gadgets:
 
-- Macbook Pro 14
-- Iphone Pro
-- Apple Watch
-- Baseus Powerbank
-- Mac Studio
-- Ipad Pro
-- Dell Monitor
-- Logitech MX Master
-- Keychron Keyboard
-- InCharge X
-- Onyx Book
-- Fast Internet
+1. Macbook Pro 14
+2. Iphone Pro
+3. Apple Watch
+4. Baseus Powerbank
+5. Mac Studio
+6. Ipad Pro
+7. Dell Monitor
+8. Logitech Mouse
+9. Keychron Keyboard
+10. InCharge X
+11. Onyx Book
+12. Fast Internet
 
 ### Bag:
 
-- Powerbank
-- Painkillers
-- Stomache pills
-- Headache pills
-- Wet napkins
-- Dry napkins
-- Antiseptic
-- Notebook
-- Parfume
-- Pencils
-- Glasses
-- Tictac
-- Airtag
-- Water
-- Cash
+1. Powerbank
+2. Painkillers
+3. Stomache pills
+4. Headache pills
+5. Wet napkins
+6. Dry napkins
+7. Antiseptic
+8. Notebook
+9. Parfume
+10. Pencils
+11. Glasses
+12. Tictac
+13. Airtag
+14. Water
+15. Cash
 
 ### Hobby:
 
-- Quiz
-- Rubick's Cube
-- Painting
-- Piano
-- Chess
-- Leetcode
-- Codeforces
-- CSAcademy
+1. Quiz
+2. Rubick's Cube
+3. Painting
+4. Piano
+5. Chess
+6. Anime
+7. TV Shows
+8. Movies
+9. Football
+10. Formula 1
+11. Leetcode
+12. Codeforces
+13. CSAcademy
 
 ### Resources:
 
-- [CP Handbook](https://cses.fi/book/book.pdf)
-- [CP Algorithms](https://cp-algorithms.com/index.html)
-- [Web Development](https://my-js.org/docs/guide/intro-guide)
-- [Learn JavaScript](https://learn.javascript.ru/)
-- [Learn Git](https://git-scm.com/book/en/v2)
-- [Learn AWS](https://www.geeksforgeeks.org/devops/aws-tutorial/)
-- [Learn Linux](https://www.kea.nu/files/textbooks/humblesec/thelinuxcommandline.pdf)
-- [Build Projects](https://www.youtube.com/@javascriptmastery)
+1. [CP Handbook](https://cses.fi/book/book.pdf)
+2. [CP Algorithms](https://cp-algorithms.com/index.html)
+3. [Web Development](https://my-js.org/docs/guide/intro-guide)
+4. [Learn JavaScript](https://learn.javascript.ru/)
+5. [Learn Git](https://git-scm.com/book/en/v2)
+6. [Learn AWS](https://www.geeksforgeeks.org/devops/aws-tutorial/)
+7. [Learn Linux](https://www.kea.nu/files/textbooks/humblesec/thelinuxcommandline.pdf)
+
+### Channels You Need:
+
+1. Javascript Mastery
+2. Ulbi TV
+3. Tsoding
+4. Neetcode IO
+5. Branch Education
+6. Matematik MGU
+7. Neetcode
+8. The PrimeTime
+9. Veritasium
+10. Vert Dider
+11. Errichto Algorithms
+12. blackpenredpen
+13. TrevTutor
+14. The Organic Chemistry Tutor
+15. 3Blue1Brown
+16. Techdose
+17. Teacoder
+18. Anton Putra
+19. Red Group
+
+### Communcation and Development Tools:
+
+#### Google:
+
+1. Docs
+2. Sheets
+3. Calendar
+4. Meets
+5. Slides
+6. Forms
+7. AI Studio
+8. Gmail
+9. Colab
+
+#### Other:
+
+1. Jira
+2. Slack
+3. Trello
+4. Asana
+5. Linear
+6. Figma
+7. Framer
+8. Canva
+9. Click Up
+10. Zoom
+11. Teams
+12. Discord
+13. Notion
+14. Monday
+15. Github
+16. Gitlab
+17. Bitbucket
+18. Lucidchart
+19. DrawIO
+20. AWS Console
+21. Google Cloud Console
+22. Azure Portal
+23. Vercel
+24. Netlify
+25. Heroku
+26. Railway
+27. Firebase
+28. Supabase
+29. Convex
+30. Appwrite
+31. Pocketbase
+32. phpMyAdmin
+33. Render
+34. Grafana
+35. Kibana
+36. Digital Ocean
+37. Sentry
+38. Prisma Studio
+39. OpenAI API Dashboard
+40. Anthropic API Dashboard
 
 ### Tools
 
@@ -156,20 +245,24 @@
 11. recoil
 12. tailwindcss
 13. postcss
-14. scss
-15. bootstrap
-16. chakraui
-17. materialui
-18. shadcn
-19. refine
-20. magicui
-21. ant design
-22. d3.js
-23. recharts
-24. chart.js
-25. threejs
-26. anime.js
-27. framer motion
+14. immer
+15. scss
+16. bootstrap
+17. chakra.ui
+18. material.ui
+19. shadcn.io
+20. refine
+21. magic.ui
+22. ant design
+23. radix.ui
+24. storybook
+25. d3.js
+26. recharts
+27. chart.js
+28. threejs
+29. anime.js
+30. gsap
+31. framer motion
 
 #### Backend Frameworks
 
@@ -208,6 +301,7 @@
 5. neo4j
 6. redis
 7. elasticsearch
+8. surrealql
 
 #### Auth
 
@@ -257,14 +351,15 @@
 #### Cloud & Hosting
 
 1. aws
-2. vercel
-3. railway
-4. netlify
-5. supabase
-6. convex
-7. azure
-8. gcp
-9. dokploy
+2. cloudflare
+3. vercel
+4. railway
+5. netlify
+6. supabase
+7. convex
+8. azure
+9. gcp
+10. dokploy
 
 #### Other
 

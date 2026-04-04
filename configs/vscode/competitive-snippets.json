@@ -44,7 +44,7 @@
 		"prefix": "nc",
 		"body": [
 			"export class Solution {",
-			"    $1($2) {",
+			"    $1 = ($2):$3 => {",
 			"        $0",
 			"    }",
 			"}"
@@ -54,7 +54,7 @@
 	"Leetcode": {
 		"scope": "typescript,javascript",
 		"prefix": "lc",
-		"body": ["export const $1 = function ($2) {", "   $0", "}"],
+		"body": ["export const $1 = ($2): $3 => {", "   $0", "}"],
 		"description": "Template for solving problem from Leetcode"
 	}
 }
