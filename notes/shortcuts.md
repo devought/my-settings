@@ -125,6 +125,7 @@
 7. `Cmd + Shift + M` - Problems panel
 8. `Cmd + Shift + U` - Output panel
 9. `Cmd + Shift + Y` - Debug console
+10. `Cmd + Shift + .` - Small navigation panel
 
 #### Terminal:
 

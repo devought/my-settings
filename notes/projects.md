@@ -4,7 +4,7 @@
 
 ---
 
-Group Chat Game Bot called `Lenkeylan` - Dont say the same thing as me. Game where 9 players answer to host question and try to not match with host's answer
+Group Chat Game Bot called `Dornbell` - Dont say the same thing as me. Game where 9 players answer to host question and try to not match with host's answer
 
 ---
 
