@@ -88,7 +88,9 @@
 3. nestjs
 4. hono
 5. elysia
-6. koa
+6. meteor
+7. hapi
+8. koa
 
 #### API & Communication
 
