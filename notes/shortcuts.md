@@ -378,4 +378,15 @@
 4. `Cmd + E` - Toggle Read/Write mode
 5. `Cmd + O` - Go to file
 6. `Cmd + W` - Close the current tab
-7.
+
+### Yazi:
+
+1. `c` — Copy (opens a sub-menu: cc for full path, cf for filename, etc.).
+2. `z` — Jump (uses zoxide to quickly teleport to frequent folders).
+3. `g` - Go to prefix
+4. `r` — Rename (opens an input bar to change the file/folder name).
+5. `f` — Filter (lets you type to instantly hide files that don't match).
+6. `v` — Visual Mode (starts selecting multiple files, like Shift in Finder).
+7. `y` — Yank (equivalent to "Copy" a file to the clipboard to paste it elsewhere).
+8. `p` — Paste (pastes whatever you just "Yanked").
+9. `d` — Delete (moves the selected item to the Trash).
